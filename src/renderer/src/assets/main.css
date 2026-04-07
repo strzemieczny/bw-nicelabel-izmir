@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/Montserrat-Regular.ttf) format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  /* Adding custom colors */
+  --color-bw-dark-blue: #051729;
+  --color-bw-tech-blue: #2EFAD9;
+  --color-bw-white: #F5F0EB;
+  --color-bw-tech-blue-hover: #26C9B2;
+  --color-bw-dark-blue-hover: #0A2B4C;
+
+  /* Adding custom screens */
+  --breakpoint-4k: 3000px;
+}
+
+/* Default theme (light) */
+:root {
+  --background: #f5f0eb;
+  --foreground: #051729;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f5f0eb;
+    --foreground: #051729;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: var(--background);
+  }
+  .text-foreground {
+    color: var(--foreground);
+  }
+  .text-balance {
+    word-wrap: break-word;
+    @supports (text-wrap: balance) {
+      text-wrap: balance;
+    }
+  }
+}
