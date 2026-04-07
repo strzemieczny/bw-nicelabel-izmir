@@ -9,11 +9,14 @@ function App(): React.JSX.Element {
       <ThemeProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<LayoutView />} />
+            <Route path="/" element={<LayoutView />}>
+              <Route path="templates" element={<div>Szablony</div>} />
+              <Route path="config" element={<div>AAAA</div>} />
+            </Route>
             <Route path="*" element={<div>Nie znaleziono strony</div>} />
           </Routes>
         </Router>
-        </ThemeProvider>
+      </ThemeProvider>
     </>
   )
 }

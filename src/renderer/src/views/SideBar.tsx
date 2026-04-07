@@ -45,14 +45,13 @@ export function SidebarView(): React.JSX.Element {
               <NavLink
                 key={item.path}
                 to={item.path}
-                onClick={(e) => e.preventDefault()}
                 className={({ isActive }) =>
                   `flex items-center w-full text-left px-3 py-3 rounded-lg transition-all duration-200 text-sm font-medium
-                ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-900/20 translate-x-1'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800 dark:hover:bg-slate-900 hover:translate-x-1'
-                }`
+                    ${
+                      isActive
+                        ? 'bg-indigo-600 text-white shadow-md shadow-indigo-900/20 translate-x-1'
+                        : 'text-slate-400 hover:text-white hover:bg-slate-800 dark:hover:bg-slate-900 hover:translate-x-1'
+                    }`
                 }
               >
                 {item.name}
