@@ -27,9 +27,7 @@ export function SidebarView(): React.JSX.Element {
   const menuItems = [
     { name: t('sidebar.print_label'), path: '/', protected: false },
     { name: t('sidebar.templates'), path: '/templates', protected: false },
-    { name: t('sidebar.config'), path: '/config', protected: false },
-    { name: t('sidebar.history'), path: '/history', protected: true },
-    { name: t('sidebar.reprint'), path: '/reprint', protected: true }
+    { name: t('sidebar.config'), path: '/config', protected: false }
   ]
 
   return (
@@ -65,7 +63,8 @@ export function SidebarView(): React.JSX.Element {
 
         <div className="p-4 border-t border-slate-800 dark:border-slate-900 text-xs text-slate-600 dark:text-slate-500 text-center">
           &copy; {new Date().getFullYear()} BorgWarner
-          {t('sidebar.dev_info')}
+          <p>{t('sidebar.dev_info')}</p>
+          <p>{t('sidebar.dev_info_line2')}</p>
           {appVersion && <div className="mt-2 opacity-50 font-mono text-xs">v{appVersion}</div>}
         </div>
       </aside>

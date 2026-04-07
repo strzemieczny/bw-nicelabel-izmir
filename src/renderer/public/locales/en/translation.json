@@ -1,0 +1,38 @@
+{
+  "sidebar": {
+    "app_title": "Label Print APP",
+    "app_name": "Label Print",
+    "dev_info": "Bartosz Strzemieczny",
+    "dev_info_line2": "contact@strzemieczny.dev",
+    "config": "Configuration",
+    "print_label": "Print Label",
+    "templates": "Templates"
+  },
+  "header": {
+    "printer_online": "Printer Online",
+    "printer_offline": "Printer Offline",
+    "checking_status": "Checking...",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "status_error": "Error fetching printer status"
+  },
+  "settings": {
+    "installed": "Installed:",
+    "latest": "Latest version:",
+    "auto_update": "Automatic update",
+    "settings": "Settings",
+    "theme": "Theme",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "theme_system": "Auto"
+  },
+  "update": {
+    "restart_and_update": "Restart and Update",
+    "checking": "Checking...",
+    "check_update": "Check for Updates",
+    "latest_version": "You have the latest version",
+    "error_occurred": "An error occurred",
+    "connection_error": "Connection error",
+    "downloading": "Downloading..."
+  }
+}

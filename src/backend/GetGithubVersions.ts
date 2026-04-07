@@ -2,8 +2,7 @@ import { ipcMain } from 'electron'
 
 export default function GetGithubVersions(): void {
   ipcMain.handle('get-github-version', async () => {
-    const url =
-      ''
+    const url = 'https://github.com/strzemieczny/bw-nicelabel-izmir.git'
 
     try {
       const response = await fetch(url)
