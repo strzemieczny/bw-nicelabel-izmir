@@ -6,6 +6,8 @@ import GetGithubVersions from '../backend/GetGithubVersions'
 import IsOnline from '../backend/IsOnline'
 import UpdatesHandler from '../backend/UpdatesHandler'
 import SettingsHandler from '../backend/SettingsHandlwe'
+import GetPrinterConfig from '../backend/GetPrinterConfig'
+import SavePrinterConfig from '../backend/SavePrinterConfig'
 
 let mainWindow: BrowserWindow
 
@@ -39,9 +41,11 @@ function createWindow(): void {
   }
 }
 
-IsOnline();
-GetGithubVersions();
-SettingsHandler();
+IsOnline()
+GetGithubVersions()
+SettingsHandler()
+GetPrinterConfig()
+SavePrinterConfig()
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

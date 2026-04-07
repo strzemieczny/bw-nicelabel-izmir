@@ -1,6 +1,6 @@
+import React from 'react'
 import { ThemeProvider } from './context/ThemeContext'
-import { LayoutView } from '@renderer/views/index'
-
+import { LayoutView, ConfigView } from '@renderer/views'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App(): React.JSX.Element {
@@ -11,7 +11,7 @@ function App(): React.JSX.Element {
           <Routes>
             <Route path="/" element={<LayoutView />}>
               <Route path="templates" element={<div>Szablony</div>} />
-              <Route path="config" element={<div>AAAA</div>} />
+              <Route path="config" element={<ConfigView />} />
             </Route>
             <Route path="*" element={<div>Nie znaleziono strony</div>} />
           </Routes>
