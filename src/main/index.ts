@@ -8,6 +8,11 @@ import UpdatesHandler from '../backend/UpdatesHandler'
 import SettingsHandler from '../backend/SettingsHandlwe'
 import GetPrinterConfig from '../backend/GetPrinterConfig'
 import SavePrinterConfig from '../backend/SavePrinterConfig'
+import TestPrinterConnection from '../backend/TestPrinterConnection'
+import GetLabelsFormats from '../backend/GetLabelsFormats'
+import ChildWindowHandlers from '../backend/ChildWindow'
+import GetLabelPreview from '../backend/GetLabelPreview'
+import SetupLabelHandlers from '../backend/PrintLabel'
 
 let mainWindow: BrowserWindow
 
@@ -46,7 +51,11 @@ GetGithubVersions()
 SettingsHandler()
 GetPrinterConfig()
 SavePrinterConfig()
-
+TestPrinterConnection()
+GetLabelsFormats()
+GetLabelPreview()
+ChildWindowHandlers()
+SetupLabelHandlers()
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
@@ -65,11 +74,11 @@ app.whenReady().then(() => {
       return {
         action: 'allow',
         overrideBrowserWindowOptions: {
-          frame: false,
-          autoHideMenuBar: true,
+          frame: true,
+          autoHideMenuBar: false,
           fullscreenable: false,
           webPreferences: {
-            preload: join(__dirname, '../preload/index.js')
+            preload: join(__dirname, '../preload/label-format.js')
           }
         }
       }

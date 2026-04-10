@@ -6,7 +6,7 @@ import ConnectionTabs from './ConnectionTabs'
 type ConnectionType = 'IP'
 
 interface ConfigFormCardProps {
-  connectionType: ConnectionType
+  connectionType: 'IP'
   onConnectionTypeChange: (type: ConnectionType) => void
   ipAddress: string
   onIpAddressChange: (value: string) => void

@@ -1,7 +1,7 @@
 {
   "sidebar": {
-    "app_title": "Label Print APP",
-    "app_name": "Label Print",
+    "app_title": "NiceLabel Print APP",
+    "app_name": "NiceLabel Print",
     "dev_info": "Bartosz Strzemieczny",
     "dev_info_line2": "contact@strzemieczny.dev",
     "config": "Configuration",
@@ -37,7 +37,7 @@
   },
   "config_view": {
     "title": "Printer Configuration",
-    "subtitle": "Configure network or COM port connection for the printer.",
+    "subtitle": "Configure network connection for the printer.",
     "error": "Configuration Error",
     "select_from_list": "-- Select from list --",
     "loading_system": "Loading configuration...",
@@ -62,6 +62,31 @@
     "save": "Save Configuration",
     "saving": "Saving...",
     "cancel": "Cancel"
+  },
+  "print_view": {
+    "title": "Print Label",
+    "subtitle": "Select a part to automatically fill in the operational data.",
+    "error": "An error occurred",
+    "part_selection": "Part Selection",
+    "select_part": "-- Select from list --",
+    "part_number": "Part Number (PN)",
+    "Part_Number": "Part Number (PN)",
+    "prefix": "Prefix",
+    "label_quantity": "Label Quantity",
+    "printing": "Printing...",
+    "print_label": "Print Label",
+    "preview_title": "Label Preview",
+    "preview_available": "Preview available",
+    "preview_loading": "Generating preview...",
+    "preview_alt": "ZPL Preview",
+    "preview_hint": "Select a part to see preview",
+    "ready_to_print": "Ready to print",
+    "select_part_first": "Select a part to continue",
+    "error_fetching_parts": "Error fetching parts",
+    "error_printing_labels": "Error printing labels",
+    "print_success": "Labels sent to printer",
+    "Try_again": "Try again",
+    "printing_blocked_midnight": "Printing is blocked due to a date change (23:55–00:05). Please try again shortly."
   },
   "status_banner": {
     "success": "Success",

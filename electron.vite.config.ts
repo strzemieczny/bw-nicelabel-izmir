@@ -11,7 +11,16 @@ export default defineConfig({
       }
     }
   },
-  preload: {},
+  preload: {
+    build: {
+      rollupOptions: {
+        input: {
+          index: resolve('src/preload/index.ts'),
+          'label-format': resolve('src/preload/label-formats.ts')
+        }
+      }
+    }
+  },
   renderer: {
     resolve: {
       alias: {

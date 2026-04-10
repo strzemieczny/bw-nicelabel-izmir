@@ -50,7 +50,7 @@ export function ConfigView(): React.JSX.Element {
           )}
 
           {/* Main card - conditional rendering */}
-          { !data.isEditing && data.hasConfig ? (
+          {!data.isEditing && data.hasConfig ? (
             <ConnectionDisplayCard
               connectionType={data.connectionType}
               ipAddress={data.ipAddress}
@@ -61,7 +61,7 @@ export function ConfigView(): React.JSX.Element {
             />
           ) : (
             <ConfigFormCard
-              connectionType={data.connectionType}
+              connectionType={data.connectionType as 'IP'}
               onConnectionTypeChange={actions.setConnectionType}
               ipAddress={data.ipAddress}
               onIpAddressChange={actions.setIpAddress}
