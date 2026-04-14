@@ -69,19 +69,19 @@ export function SettingsMenuView(): React.JSX.Element {
             <div className="space-y-2">
               <span className="text-sm text-gray-600 dark:text-slate-300 flex items-center gap-2">
                 <FiGlobe className="w-3.5 h-3.5" />
-                {t('settings.language', 'Język')}
+                {t('settings.language', 'Language')}
               </span>
               <div className="flex gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-lg">
                 <button
                   type="button"
-                  onClick={() => actions.handleLanguageChange('pl')}
+                  onClick={() => actions.handleLanguageChange('tr')}
                   className={`flex-1 px-2 py-1.5 rounded-md text-xs font-medium transition-all ${
-                    i18n.language === 'pl'
+                    i18n.language === 'tr'
                       ? 'bg-white dark:bg-slate-600 shadow text-slate-900 dark:text-white'
                       : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'
                   }`}
                 >
-                  Polski
+                  {t('settings.language_turkish', 'Turkish')}
                 </button>
                 <button
                   type="button"
@@ -92,7 +92,7 @@ export function SettingsMenuView(): React.JSX.Element {
                       : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'
                   }`}
                 >
-                  English
+                  {t('settings.language_english', 'English')}
                 </button>
               </div>
             </div>

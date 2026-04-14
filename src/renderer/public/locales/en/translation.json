@@ -1,4 +1,11 @@
 {
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "test": "Test"
+  },
   "sidebar": {
     "app_title": "NiceLabel Print APP",
     "app_name": "NiceLabel Print",
@@ -24,7 +31,10 @@
     "theme": "Theme",
     "theme_light": "Light",
     "theme_dark": "Dark",
-    "theme_system": "Auto"
+    "theme_system": "Auto",
+    "language": "Language",
+    "language_english": "English",
+    "language_turkish": "Turkish"
   },
   "update": {
     "restart_and_update": "Restart and Update",
@@ -91,5 +101,12 @@
   "status_banner": {
     "success": "Success",
     "error": "Error"
+  },
+  "label_formats": {
+    "title": "Label Templates",
+    "subtitle": "Manage and browse available ZPL print formats.",
+    "no_templates": "No templates",
+    "no_templates_message": "No files found in the templates folder.",
+    "found": "Found"
   }
 }
