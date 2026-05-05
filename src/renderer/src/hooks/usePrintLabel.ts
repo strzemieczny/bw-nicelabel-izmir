@@ -46,6 +46,30 @@ const MANUAL_PARTS: Part[] = [
     Serial_Prefix: '5 B3C 455',
     Part_Description: 'BMW',
     Label_Format: 'BMW_nicelabel'
+  },
+  {
+    id: 2,
+    Part_Number: '5 A93 8F4',
+    Description: 'NiceLabel for BMW (5 A93 8F4)',
+    Serial_Prefix: '5 A93 8F4',
+    Part_Description: 'BMW',
+    Label_Format: 'BMW_nicelabel'
+  },
+  {
+    id: 3,
+    Part_Number: '5 A93 8F5',
+    Description: 'NiceLabel for BMW (5 A93 8F5)',
+    Serial_Prefix: '5 A93 8F5',
+    Part_Description: 'BMW',
+    Label_Format: 'BMW_nicelabel'
+  },
+  {
+    id: 4,
+    Part_Number: '5 A93 8F6',
+    Description: 'NiceLabel for BMW (5 A93 8F6)',
+    Serial_Prefix: '5 A93 8F6',
+    Part_Description: 'BMW',
+    Label_Format: 'BMW_nicelabel'
   }
 ]
 
